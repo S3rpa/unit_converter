@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h1>⇄ unit converter</h1>
+    </nav>
+
+    <div class="converter-container">
+        <div class="input-group">
+            <h1>convert</h1>
+                <select id="conversion-type" class="conversion-select">
+                    <option value="km-to-miles">Kilómetros a Millas</option>
+                    <option value="miles-to-km">Millas a Kilómetros</option>
+                    <option value="feet-to-meters">Pies a Metros</option>
+                    <option value="meters-to-feet">Metros a Pies</option>
+                    <option value="cm-to-inches">Centímetros a Pulgadas</option>
+                    <option value="inches-to-cm">Pulgadas a Centímetros</option>
+                </select>
+                <input type="text" class="number-input" placeholder="">
+                <button id="swap" class="swap">⇄</button>
+                <input type="text" class="number-input result-container" placeholder="" readonly>
+        </div>
+        <button id="save" class="heart">❤</button>
+    </div>
+
+    <div class="saved-container" id="saved-conversions"></div>
+    
+    <footer class="footer">
+        <a href="#terms-of-service" id="terms">Terms of Services</a>
+        <a href="#privacy-policy" id="priv">Privacy Policy</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
